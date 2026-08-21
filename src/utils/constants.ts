@@ -18,10 +18,17 @@ export const LOG_MESSAGES = {
 
   // Auth & User logs
   AUTH: {
-    USER_REGISTERED: (email: string) => `User registered successfully: ${email}`,
+    USER_REGISTERED: `User registered successfully.`,
     LOGIN_FAILED: (email: string) => `Failed login attempt for: ${email}`,
     UNAUTHORIZED_ACCESS: (userId: string, path: string) =>
       `Unauthorized access attempt by user ${userId} on ${path}`,
+    REQUIRED_ID_PASS: "Email and password are required.",
+    REQUIRED_ALL_FIELDS: "All fields are required.",
+    USER_EXISTS: "User already exists with this email or username.",
+    INTERNAL_SERVER_ERROR: "Internal server error",
+    INVALID_CREDS: "Invalid credentials.",
+    LOGIN_SUCCESSFUL: "Login successful.",
+    LOGGED_OUT: "Logged out successfully.",
   },
 
   // Post logs
